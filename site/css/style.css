@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Bitter', serif;
+}
+
+:root {
+    --nav-width: 256px;
+    --left-margin: 0;
+}
+
+article img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    padding-top: 16px;
+}
+
+a.first {
+    border: none;
+    margin-left: 16px;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding-left: 16px;
+    width: var(--nav-width);
+    box-sizing: border-box;
+
+    background-color: aquamarine;
+
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#hamburger-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    box-sizing: border-box;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    height: 64px;
+}
+
+#nav-bar-wrapper {
+    background-color: violet;
+    width: calc(100vw - var(--left-margin));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search {
+    margin-left: auto;
+}
+
+#menu {
+    display: none;
+}
+
+@media screen and (max-device-width: 1024px) {
+
+    :root {
+        --nav-width: 256px;
+        --left-margin: 256px;
+    }
+
+    #hamburger-menu {
+        flex-direction: column;
+        align-items: flex-start;
+
+        background-color: aqua;
+        width: var(--nav-width);
+        height: 100vh;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    
+    a, a.first {
+        border: none;
+        margin: 0;
+        margin-top: 16px;
+    }
+
+    nav {
+        margin-top: 16px;
+        flex-direction: column;
+    }
+
+    #nav-bar-wrapper {
+        margin-left: var(--left-margin);
+    }
+
+    #content {
+        margin-left: var(--left-margin);
+        width: calc(100vw - var(--left-margin));
+    }
+
+}
+
+@media screen and (max-device-width: 800px) {
+
+    :root {
+        --left-margin: 0;
+
+    }
+
+    #menu {
+        display: inline;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+}
