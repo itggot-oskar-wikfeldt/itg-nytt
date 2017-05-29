@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITG-Nytt - Hem</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.slim.js"
+            integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+<div id="nav-bar-wrapper">
+
+    <div id="nav-bar">
+
+        <button id="menu-button" onclick="openMenu()">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div id="hamburger-menu">
+            <header>
+                ITG-Nytt
+            </header>
+            <nav>
+                <a href="" class="selected first">Hem</a>
+                <div class="dropdown">
+                    <div id="news-header">
+                        <a href="">Nyheter</a>
+                        <button id="expand-news" onclick="toggleNews()">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown-menu-wrapper">
+                        <div class="arrow-up"></div>
+                        <div class="dropdown-menu">
+                            <a href="">Caféet</a>
+                            <a href="">Skolan</a>
+                            <a href="">Mat</a>
+                            <a href="">Nazir</a>
+                            <a href="">Elevråd</a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="">Support</a>
+            </nav>
+        </div>
+
+        <div id="scrim" onclick="closeMenu()"></div>
+
+        <h1 id="title">Hem</h1>
+
+
+        <div id="search">
+            <button id="search-button" onclick="search()">
+                <i class="material-icons">search</i>
+            </button>
+            <div id="input-wrapper">
+                <div class="arrow-up"></div>
+                <button id="back" onclick="search()">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <input type="text" id="search-input" name="search" placeholder="Sök...">
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<section id="content">
+
+    <article>
+
+        <img src="img/paj_itg.jpg">
+
+        <section>
+            <h2>Oidentifierat Paj-Objekt sett ovanför IT-Gymnaiset</h2>
+            <h3>Paj-experten Daniel Berg undersöker just nu händelsen.</h3>
+        </section>
+
+
+    </article>
+    <article>
+
+        <img src="img/paj_itg.jpg">
+
+        <section>
+            <h2>Oidentifierat Paj-Objekt sett ovanför IT-Gymnaiset</h2>
+            <h3>Underrubrik</h3>
+        </section>
+
+
+    </article>
+    <article>
+
+        <img src="img/paj_itg.jpg">
+
+        <section>
+            <h2>Oidentifierat Paj-Objekt sett ovanför IT-Gymnaiset</h2>
+            <h3>Underrubrik</h3>
+        </section>
+
+
+    </article>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
