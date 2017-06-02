@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITG-Nytt - Caféet</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.slim.js"
+            integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+<div id="nav-bar-wrapper">
+
+    <div id="nav-bar">
+
+        <button id="menu-button" onclick="openMenu()">
+            <i class="sprite sprite-ic_menu_black_24dp_1x"></i>
+        </button>
+
+        <div id="hamburger-menu">
+            <header>
+                ITG-Nytt
+            </header>
+            <nav>
+                <a href="index.html" class="first">Hem</a>
+                <div class="dropdown">
+                    <div id="news-header">
+                        <a href="" class="selected">Nyheter</a>
+                        <button id="expand-news" onclick="toggleNews()">
+                            <i class="sprite sprite-ic_keyboard_arrow_down_black_24dp_1x"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown-menu-wrapper">
+                        <div class="arrow-up"></div>
+                        <div class="dropdown-menu">
+                            <a href="">Caféet</a>
+                            <a href="">Skolan</a>
+                            <a href="">Mat</a>
+                            <a href="">Nazir</a>
+                            <a href="">Elevråd</a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="">Support</a>
+            </nav>
+        </div>
+
+        <div id="scrim" onclick="closeMenu()"></div>
+
+        <h1 id="title">Caféet</h1>
+
+
+        <div id="search">
+            <button id="search-button" onclick="search()">
+                <i class="sprite sprite-ic_search_black_24dp_1x"></i>
+            </button>
+            <div id="input-wrapper">
+                <div class="arrow-up"></div>
+                <button id="back" onclick="search()">
+                    <i class="sprite sprite-ic_arrow_back_black_24dp_1x"></i>
+                </button>
+                <input type="text" id="search-input" name="search" placeholder="Sök...">
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<section id="content">
+
+    <a>
+        <article>
+
+            <img src="img/cafe.jpg">
+
+            <section>
+                <h2>Nya bakelser i caféet</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+
+
+        </article>
+    </a>
+
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

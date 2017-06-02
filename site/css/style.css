@@ -1,8 +1,39 @@
 body {
     margin: 0;
     font-family: 'Bitter', serif;
+    font-size: 16px;
     overflow-x: hidden;
     background-color: #f7f7f7;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ic_arrow_back_black_24dp_1x {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.sprite-ic_keyboard_arrow_down_black_24dp_1x {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -5px;
+}
+
+.sprite-ic_menu_black_24dp_1x {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -39px;
+}
+
+.sprite-ic_search_black_24dp_1x {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -39px;
 }
 
 :root {
@@ -28,6 +59,7 @@ input[type=text] {
     border: none;
     background-color: rgba(100,100,100,1);
     color: white;
+    outline: none;
 }
 
 #input-wrapper {
@@ -58,10 +90,6 @@ article img {
     max-width: 100%;
     height: auto;
 }
-article {
-    margin: auto;
-    margin-bottom: 16px;
-}
 
 article section {
     padding: 16px;
@@ -79,6 +107,7 @@ h2 {
 
 h3 {
     font-weight: 400;
+    font-size: 20px;
 }
 
 nav {
@@ -98,6 +127,20 @@ a {
 
 a.selected, a:hover {
     color: rgba(0,0,0,0.8);
+}
+
+#content a {
+    padding: 0;
+    border: none;
+    box-sizing: content-box;
+    color: inherit;
+    margin: auto;
+    margin-bottom: 16px;
+    max-width: 1024px;
+}
+
+p {
+    text-align: justify;
 }
 
 button {

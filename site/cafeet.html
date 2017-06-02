@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ITG-Nytt - Hem</title>
+    <title>ITG-Nytt - Caféet</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
     <div id="nav-bar">
 
         <button id="menu-button" onclick="openMenu()">
-            <i class="material-icons">menu</i>
+            <i class="sprite sprite-ic_menu_black_24dp_1x"></i>
         </button>
 
         <div id="hamburger-menu">
@@ -29,12 +29,12 @@
                 ITG-Nytt
             </header>
             <nav>
-                <a href="" class="selected first">Hem</a>
+                <a href="index.html" class="first">Hem</a>
                 <div class="dropdown">
                     <div id="news-header">
-                        <a href="">Nyheter</a>
+                        <a href="" class="selected">Nyheter</a>
                         <button id="expand-news" onclick="toggleNews()">
-                            <i class="material-icons">keyboard_arrow_down</i>
+                            <i class="sprite sprite-ic_keyboard_arrow_down_black_24dp_1x"></i>
                         </button>
                     </div>
 
@@ -56,17 +56,17 @@
 
         <div id="scrim" onclick="closeMenu()"></div>
 
-        <h1 id="title">Hem</h1>
+        <h1 id="title">Caféet</h1>
 
 
         <div id="search">
             <button id="search-button" onclick="search()">
-                <i class="material-icons">search</i>
+                <i class="sprite sprite-ic_search_black_24dp_1x"></i>
             </button>
             <div id="input-wrapper">
                 <div class="arrow-up"></div>
                 <button id="back" onclick="search()">
-                    <i class="material-icons">arrow_back</i>
+                    <i class="sprite sprite-ic_arrow_back_black_24dp_1x"></i>
                 </button>
                 <input type="text" id="search-input" name="search" placeholder="Sök...">
             </div>
@@ -78,39 +78,45 @@
 
 <section id="content">
 
-    <article>
+    <a href="bakelser.html">
+        <article>
 
-        <img src="img/paj_itg.jpg">
+            <img src="img/cafe.jpg">
 
-        <section>
-            <h2>Oidentifierat Paj-Objekt sett ovanför IT-Gymnaiset</h2>
-            <h3>Paj-experten Daniel Berg undersöker just nu händelsen.</h3>
-        </section>
-
-
-    </article>
-    <article>
-
-        <img src="img/paj_itg.jpg">
-
-        <section>
-            <h2>Oidentifierat Paj-Objekt sett ovanför IT-Gymnaiset</h2>
-            <h3>Underrubrik</h3>
-        </section>
+            <section>
+                <h2>Nya bakelser i caféet</h2>
+                <h3>Josef säger vad han tycker.</h3>
+            </section>
 
 
-    </article>
-    <article>
+        </article>
+    </a>
+    <a href="bakelser.html">
+        <article>
 
-        <img src="img/paj_itg.jpg">
+            <img src="img/cafe.jpg">
 
-        <section>
-            <h2>Oidentifierat Paj-Objekt sett ovanför IT-Gymnaiset</h2>
-            <h3>Underrubrik</h3>
-        </section>
+            <section>
+                <h2>Nya bakelser i caféet</h2>
+                <h3>Josef säger vad han tycker.</h3>
+            </section>
 
 
-    </article>
+        </article>
+    </a>
+    <a href="bakelser.html">
+        <article>
+
+            <img src="img/cafe.jpg">
+
+            <section>
+                <h2>Nya bakelser i caféet</h2>
+                <h3>Josef säger vad han tycker.</h3>
+            </section>
+
+
+        </article>
+    </a>
 
 </section>
 
